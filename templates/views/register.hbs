@@ -11,14 +11,14 @@
 
     <div class="container register mb-5">
         <div class="row">
-            <div class="col-md-3 register-left">
+            {{!-- <div class="col-md-3 register-left">
                 <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
                 <h3>Welcome</h3>
                 <p>to the complete MERN Backend course</p>
                 <input type="submit" name="" value="Login" /><br />
-            </div>
-            <div class="col-md-9 register-right">
-                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+            </div> --}}
+            <div class="col-md-12 col-sm-12 register-right">
+                {{!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
                             aria-controls="home" aria-selected="true">Registration</a>
@@ -27,10 +27,10 @@
                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                             aria-controls="profile" aria-selected="false">Login</a>
                     </li>
-                </ul>
+                </ul> --}}
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <h3 class="register-heading">Employee Registration Form</h3>
+                        <h3 class="register-heading">BE ONE OF US <br/> Social Hub</h3>
                         <form action="/register" method="POST">
                             <div class="row register-form">
                                 <div class="col-md-6">
@@ -85,11 +85,14 @@
                                     </div>
 
                                     <input type="submit" class="btnRegister" value="Register" />
+                                    <a class=" text-dark" href="/login">Login</a>
                                 </div>
+                                {{!-- <input type="submit" class="btnRegister" value="Register" /> --}}
+
                             </div>
                         </form>
                     </div>
-                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    {{!-- <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <h3 class="register-heading">Employee Login Form</h3>
                         <div class="row register-form">
                             <div class="col-md-6">
@@ -121,9 +124,10 @@
                                     <input type="text" class="form-control" placeholder="`Answer *" value="" />
                                 </div>
                                 <input type="submit" class="btnRegister" value="Register" />
+
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
