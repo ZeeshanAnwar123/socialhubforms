@@ -11,20 +11,31 @@
                 <li class="nav-item active">
                     <a class="nav-link text-dark" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
+                {{#if isLogin}}
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="/webpage">Main</a>
                 </li>
+                {{/if}}
+
+                {{#if isLogin}}
+                {{else}}
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="/login">Login</a>
                 </li>
+                {{/if}}
                 
-                
+                {{#if isLogin}}
+                {{else}}
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="/register">Registration</a>
                 </li>
+                {{/if}}
+
+                {{#if isLogin}}
                 <li class="nav-item">
                     <a class="nav-link btn btn-danger text-white" href="/logout">Logout</a>
                 </li>
+                {{/if}}
             </ul>
 
         </div>
